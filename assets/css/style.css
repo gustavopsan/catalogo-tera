@@ -213,6 +213,40 @@ body, * {
     height: 20px;
 }
 
+/* Menu mobile */
+
+.catalogo-contanier .catalogo-menu-mobile {
+    display: none;
+    gap: 10px;
+    overflow-x: scroll;
+}
+
+.catalogo-contanier .catalogo-menu-mobile::-webkit-scrollbar {
+    display: none;
+}
+
+.catalogo-contanier .catalogo-menu-mobile button {
+    font-size: 20px;
+    background-color: #90908e;
+    border: none;
+    color: white;
+    padding: 15px;
+    width: fit-content;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.catalogo-contanier .catalogo-menu-mobile button:hover {
+    background-color: #AD0004;
+    transition: all 0.2s ease-in-out;
+}
+
+.catalogo-contanier .catalogo-menu-mobile button img {
+    height: 20px;
+}
+
 .banner {
     width: -webkit-fill-available;
     height: 200px;
@@ -301,4 +335,31 @@ body, * {
 .catalogo-items .food-wrapper .item button:active {
     background-color: #90908e;
     transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 500px) {
+    .header-container {
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .destaque-container .left-wrapper {
+        width: min-content;
+    }
+
+    .destaque-container .right-wrapper {
+        display: none;
+    }
+
+    .catalogo-items .food-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .catalogo-contanier .catalogo-menu {
+        display: none;
+    }
+
+    .catalogo-contanier .catalogo-menu-mobile {
+        display: flex;
+    } 
 }
