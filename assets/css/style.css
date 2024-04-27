@@ -6,8 +6,19 @@
 body, * {
     margin: 0;
     padding: 0;
-
     font-family: 'PoppinsMedium', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
 }
 
 .header-container {
@@ -18,7 +29,7 @@ body, * {
 }
 
 .header-container .logo-container img {
-    height: 50px;
+    height: 70px;
 }
 
 .header-container .cart-container, .header-container .central-container {
@@ -31,13 +42,14 @@ body, * {
     text-decoration: none;
     color: #212121;
     font-weight: bolder;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .header-container .cart-container {
     background-color: #90908e;
     padding: 5px 5px 5px 15px;
     border-radius: 15px;
+    height: 40px;
 }
 
 .header-container .cart-container:hover {
@@ -66,6 +78,7 @@ body, * {
     padding: 20px 50px;
     display: flex;
     align-items: center;
+    min-height: 55vh;
 }
 
 .destaque-container .left-wrapper {
@@ -79,7 +92,7 @@ body, * {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bolder;
     color: #212121;
 }
@@ -89,15 +102,16 @@ body, * {
 }
 
 .destaque-container .left-wrapper p {
-    font-size: 12px;
+    font-size: 15px;
     color: #4f4f4f;
 }
 
 .destaque-container .left-wrapper a.cardapio {
     text-decoration: none;
+    font-size: 20px;
     background-color: #AD0004;
     color: white;
-    padding: 10px;
+    padding: 15px 30px;
     width: fit-content;
     border-radius: 15px;
 }
@@ -108,13 +122,13 @@ body, * {
 }
 
 .destaque-container .left-wrapper .social-links a {
-    height: 25px;
-    width: 25px;
+    height: 40px;
+    width: 40px;
     background-color: #90908e;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 5px;
 }
 
@@ -124,21 +138,121 @@ body, * {
 }
 
 .destaque-container .left-wrapper .social-links .icon {
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
 }
 
 .destaque-container .right-wrapper .background-card {
-    height: 350px;
-    width: 350px;
+    height: 450px;
+    width: 450px;
     background-color: #f4c949;
     border-radius: 80px;
     position: absolute;
-    right: 40px;
     z-index: -1;
+    margin-left: 100px;
 }
 
 .destaque-container .right-wrapper img {
-    width: 450px;
+    width: 550px;
     padding-top: 60px;
+}
+
+.catalogo-contanier {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.catalogo-contanier .catalogo-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalogo-contanier .catalogo-header b {
+    color: #AD0004;
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+
+.catalogo-contanier .catalogo-header span {
+    color: #212121;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.catalogo-contanier .catalogo-menu {
+    display: flex;
+    gap: 10px
+}
+
+.catalogo-contanier .catalogo-menu button {
+    font-size: 20px;
+    background-color: #90908e;
+    border: none;
+    color: white;
+    padding: 15px;
+    width: fit-content;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.catalogo-contanier .catalogo-menu button:hover {
+    background-color: #AD0004;
+    transition: all 0.2s ease-in-out;
+}
+
+.catalogo-contanier .catalogo-menu button img {
+    height: 20px;
+}
+
+.banner {
+    width: -webkit-fill-available;
+    height: 200px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #90908e;
+    margin-bottom: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 100px;
+    width: -webkit-fill-available;
+    bottom: 10px;
+}
+
+.footer-container .logo-container img {
+    height: 50px;
+}
+
+.footer-container .social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-container .social-links a {
+    height: 40px;
+    width: 40px;
+    background-color: #90908e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.footer-container .social-links a:hover {
+    background-color: #AD0004;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-container .social-links .icon {
+    height: 20px;
+    width: 20px;
 }
