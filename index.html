@@ -66,80 +66,194 @@
                     <span>É só clicar pra ser direcionado!</span>
                 </div>
 
-                <div class="catalogo-menu">
-                    <button id="restaurantes">
+                <div class="catalogo-menu" id="catalogo-menu">
+                    <button id="restaurantes" class="active" onclick="toggleMenu(event)">
                         <img src="/assets/img/icon-burger.svg" alt="icon-burger">
-                        Restaurantes
+                        <span>Restaurantes</span>
                     </button>
-                    <button class="bebidas">
+                    <button id="bebidas" onclick="toggleMenu(event)">
                         <img src="/assets/img/icon-bebidas.svg" alt="icon-bebidas">
-                        Depositos de bebidas
+                        <span>Depositos de bebidas</span>
                     </button>
-                    <button id="farmacias">
+                    <button id="farmacias" onclick="toggleMenu(event)">
                         <img src="/assets/img/icon-farmacia.svg" alt="icon-farmacia">
-                        Farmácias
+                        <span>Farmácias</span>
                     </button>
-                    <button id="outros">
+                    <button id="outros" onclick="toggleMenu(event)">
                         <img src="/assets/img/icone-carrinho-vazio.svg" alt="icon-farmacia">
-                        Outros
+                        <span>Outros</span>
                     </button>
                 </div>
 
-                <div class="catalogo-menu-mobile">
-                    <button id="restaurantes">
-                        <img src="/assets/img/icon-burger.svg" alt="icon-burger">
-                    </button>
-                    <button class="bebidas">
-                        <img src="/assets/img/icon-bebidas.svg" alt="icon-bebidas">
-                    </button>
-                    <button id="farmacias">
-                        <img src="/assets/img/icon-farmacia.svg" alt="icon-farmacia">
-                    </button>
-                    <button id="outros">
-                        <img src="/assets/img/icone-carrinho-vazio.svg" alt="icon-farmacia">
-                    </button>
-                </div>
+                <div class="catalogo-items" id="catalogo">
+                    <div id="food-wrapper" class="catalogo-wrapper">
+                        <div class="item">
+                            <img src="/assets/img/pizzas.png" alt="img-cliente">
+                            <b>Restaurante</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/pizzas.png" alt="img-cliente">
+                            <b>Restaurante</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/pizzas.png" alt="img-cliente">
+                            <b>Restaurante</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/pizzas.png" alt="img-cliente">
+                            <b>Restaurante</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/pizzas.png" alt="img-cliente">
+                            <b>Restaurante</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/pizzas.png" alt="img-cliente">
+                            <b>Restaurante</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/pizzas.png" alt="img-cliente">
+                            <b>Restaurante</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/pizzas.png" alt="img-cliente">
+                            <b>Restaurante</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                    </div>
 
-                <div class="catalogo-items">
-                    <div class="food-wrapper">
+                    <div id="drinks-wrapper" class="catalogo-wrapper hidden">
                         <div class="item">
-                            <img src="/assets/img/pizzas.png" alt="img-cliente">
-                            <b>Panificação Maravilha</b>
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Deposito</b>
                             <button>Ver catálogo</button>
                         </div>
                         <div class="item">
-                            <img src="/assets/img/pizzas.png" alt="img-cliente">
-                            <b>Panificação Maravilha</b>
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Deposito</b>
                             <button>Ver catálogo</button>
                         </div>
                         <div class="item">
-                            <img src="/assets/img/pizzas.png" alt="img-cliente">
-                            <b>Panificação Maravilha</b>
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Deposito</b>
                             <button>Ver catálogo</button>
                         </div>
                         <div class="item">
-                            <img src="/assets/img/pizzas.png" alt="img-cliente">
-                            <b>Panificação Maravilha</b>
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Deposito</b>
                             <button>Ver catálogo</button>
                         </div>
                         <div class="item">
-                            <img src="/assets/img/pizzas.png" alt="img-cliente">
-                            <b>Panificação Maravilha</b>
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Deposito</b>
                             <button>Ver catálogo</button>
                         </div>
                         <div class="item">
-                            <img src="/assets/img/pizzas.png" alt="img-cliente">
-                            <b>Panificação Maravilha</b>
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Deposito</b>
                             <button>Ver catálogo</button>
                         </div>
                         <div class="item">
-                            <img src="/assets/img/pizzas.png" alt="img-cliente">
-                            <b>Panificação Maravilha</b>
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Deposito</b>
                             <button>Ver catálogo</button>
                         </div>
                         <div class="item">
-                            <img src="/assets/img/pizzas.png" alt="img-cliente">
-                            <b>Panificação Maravilha</b>
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Deposito</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                    </div>
+
+                    <div id="farmacy-wrapper" class="catalogo-wrapper hidden">
+                        <div class="item">
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Farmácia</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Farmácia</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Farmácia</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Farmácia</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Farmácia</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Farmácia</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Farmácia</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Farmácia</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                    </div>
+
+                    <div id="other-wrapper" class="catalogo-wrapper hidden">
+                        <div class="item">
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Estabelecimento</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Estabelecimento</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Estabelecimento</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Estabelecimento</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Estabelecimento</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Estabelecimento</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Estabelecimento</b>
+                            <button>Ver catálogo</button>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/bebidas.png" alt="img-cliente">
+                            <b>Estabelecimento</b>
                             <button>Ver catálogo</button>
                         </div>
                     </div>
@@ -168,5 +282,7 @@
             </footer>
         </div>
     </div>
+
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>

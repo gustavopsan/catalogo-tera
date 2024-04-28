@@ -9,6 +9,10 @@ body, * {
     font-family: 'PoppinsMedium', sans-serif;
 }
 
+.hidden {
+    display: none !important;
+}
+
 .main-container {
     display: flex;
     justify-content: center;
@@ -213,39 +217,6 @@ body, * {
     height: 20px;
 }
 
-/* Menu mobile */
-
-.catalogo-contanier .catalogo-menu-mobile {
-    display: none;
-    gap: 10px;
-    overflow-x: scroll;
-}
-
-.catalogo-contanier .catalogo-menu-mobile::-webkit-scrollbar {
-    display: none;
-}
-
-.catalogo-contanier .catalogo-menu-mobile button {
-    font-size: 20px;
-    background-color: #90908e;
-    border: none;
-    color: white;
-    padding: 15px;
-    width: fit-content;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px
-}
-
-.catalogo-contanier .catalogo-menu-mobile button:hover {
-    background-color: #AD0004;
-    transition: all 0.2s ease-in-out;
-}
-
-.catalogo-contanier .catalogo-menu-mobile button img {
-    height: 20px;
-}
 
 .banner {
     width: -webkit-fill-available;
@@ -301,14 +272,14 @@ body, * {
     padding-bottom: 50px;
 }
 
-.catalogo-items .food-wrapper {
+.catalogo-items .catalogo-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
     row-gap: 40px;
 }
 
-.catalogo-items .food-wrapper .item {
+.catalogo-items .catalogo-wrapper .item {
     display: flex;
     gap: 30px;
     flex-direction: column;;
@@ -319,11 +290,11 @@ body, * {
     border: none !important;
 }
 
-.catalogo-items .food-wrapper .item img {
+.catalogo-items .catalogo-wrapper .item img {
     width: 215px;
 }
 
-.catalogo-items .food-wrapper .item button {
+.catalogo-items .catalogo-wrapper .item button {
     font-size: 20px;
     background-color: #AD0004;
     color: white;
@@ -332,7 +303,7 @@ body, * {
     border: none
 }
 
-.catalogo-items .food-wrapper .item button:active {
+.catalogo-items .catalogo-wrapper .item button:active {
     background-color: #90908e;
     transition: all 0.2s ease-in-out;
 }
@@ -366,24 +337,23 @@ body, * {
         text-align: center;
     }
 
-    .catalogo-contanier .catalogo-menu {
+    .catalogo-contanier .catalogo-menu span{
         display: none;
     }
 
-    .catalogo-contanier .catalogo-menu-mobile {
-        display: flex;
+    .catalogo-contanier .catalogo-menu {
         justify-content: center;
-    } 
+    }
 
     .catalogo-items {
         justify-content: center;
     }
 
-    .catalogo-items .food-wrapper {
+    .catalogo-items .catalogo-wrapper {
         grid-template-columns: 1fr;
     }
 
-    .catalogo-items .food-wrapper .item img {
+    .catalogo-items .catalogo-wrapper .item img {
         width: 80vw;
     }
 
