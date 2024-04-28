@@ -9,6 +9,10 @@ body, * {
     font-family: 'PoppinsMedium', sans-serif;
 }
 
+.inactive {
+    pointer-events: none;
+  }
+
 .hidden {
     display: none !important;
 }

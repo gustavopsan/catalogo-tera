@@ -7,7 +7,6 @@ const catalogo = document.getElementById("catalogo");
 const catalogoMenu = document.getElementById("catalogo-menu");
 
 function toggleMenu(event) {
-    event.preventDefault();
     catalogoMenu.querySelectorAll(".active").forEach( item => item.classList.remove("active") );
 
     event.target.classList.add("active");
