@@ -212,7 +212,7 @@ body, * {
     gap: 10px
 }
 
-.catalogo-contanier .catalogo-menu button:hover {
+.catalogo-contanier .catalogo-menu button:hover, .catalogo-contanier .catalogo-menu button.active {
     background-color: #AD0004;
     transition: all 0.2s ease-in-out;
 }
@@ -354,11 +354,26 @@ body, * {
     }
 
     .catalogo-items .catalogo-wrapper {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+        padding: 0 10px;
     }
 
     .catalogo-items .catalogo-wrapper .item img {
-        width: 80vw;
+        width: 35vw;
+    }
+
+    .catalogo-items .catalogo-wrapper .item b {
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 135px;
+        text-overflow: ellipsis;
+    }
+
+    .catalogo-items .catalogo-wrapper .item button {
+       font-size: 15px;
+       padding: 10px;
     }
 
     .footer-container {
